@@ -8,8 +8,9 @@ import { tracks, setAllMuted } from '../game/audio';
  *    browsers that block autoplay).
  *  - 40s round theme: while a Connections/Sequences timer is running; stops the
  *    moment it's paused or a score is given.
- *  - Wall music: while the wall timer is running; pauses when the timer pauses,
- *    and stops once the wall is complete (before connections are guessed).
+ *  - Wall music: while the wall timer OR the Missing Vowels timer is running;
+ *    pauses when the timer pauses, and stops once the wall is complete (before
+ *    connections are guessed) or the round is left.
  */
 export function AudioController() {
   const phase = useGame((s) => s.phase);
@@ -51,19 +52,21 @@ export function AudioController() {
     }
   }, [phase, timerRunning]);
 
-  // Wall music.
+  // Wall music — used for both the Connecting Wall and the Missing Vowels round.
   useEffect(() => {
     const activeWall =
       wall.activeTeam != null ? wall.assignment[wall.activeTeam] ?? null : null;
     const play = activeWall ? wall.plays[activeWall] : null;
     const inWallPlay = phase === 'round3' && wall.stage === 'play' && !!play && !play.finished;
+    const inVowels = phase === 'round4';
+    const active = inWallPlay || inVowels;
 
-    if (inWallPlay && timerRunning) {
+    if (active && timerRunning) {
       if (!tracks.wall.playing) tracks.wall.play(); // start / resume
-    } else if (inWallPlay && !timerRunning) {
+    } else if (active && !timerRunning) {
       tracks.wall.pause(); // paused → hold position
     } else {
-      tracks.wall.stop(); // finished or left the wall → reset
+      tracks.wall.stop(); // finished / left → reset
     }
   }, [phase, timerRunning, wall]);
 

@@ -45,8 +45,8 @@ class Track {
 
 export const tracks = {
   theme: new Track(themeSrc, { volume: 0.8 }),
-  round40: new Track(round40Src, { volume: 0.7 }),
-  wall: new Track(wallSrc, { volume: 0.7 }),
+  round40: new Track(round40Src, { volume: 0.92 }),
+  wall: new Track(wallSrc, { volume: 0.92 }),
 };
 
 export function setAllMuted(muted: boolean) {

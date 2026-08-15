@@ -85,8 +85,8 @@ Three music cues play automatically:
   click — it starts then).
 - **40‑second round music** while a Connections/Sequences timer runs; it stops the moment you
   pause or award a score.
-- **Wall music** while the wall timer runs; it pauses with the timer and stops once the wall is
-  complete (before connections are scored).
+- **Wall music** while the wall timer **or the Missing Vowels timer** runs; it pauses with the
+  timer and stops once the wall is complete (before connections are scored) or the round is left.
 
 Use the 🔊 button (host bar, or top‑right on the setup screen) to mute everything.
 
