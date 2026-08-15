@@ -1,0 +1,202 @@
+{
+  "title": "Sinistrals v Merseyside Eyes",
+  "series": "22",
+  "episode": "3",
+  "author": "OCDB archive (example)",
+  "notes": "Bundled sample game to demonstrate all four rounds.",
+  "round1": [
+    {
+      "hieroglyph": "two-reeds",
+      "media": "text",
+      "clues": [
+        { "media": "text", "value": "Janet Jackson Super Bowl halftime performance" },
+        { "media": "text", "value": "\"Apollo 13\" late fees" },
+        { "media": "text", "value": "Collecting Pez dispensers" },
+        { "media": "text", "value": "Rating the attractiveness of Harvard students" }
+      ],
+      "connection": "Start-up stories",
+      "details": "YouTube, Netflix, eBay, Facebook"
+    },
+    {
+      "hieroglyph": "lion",
+      "media": "picture",
+      "clues": [
+        { "media": "picture", "value": "s22e3p1.png" },
+        { "media": "picture", "value": "s22e3p2.png" },
+        { "media": "picture", "value": "s22e3p3.png" },
+        { "media": "picture", "value": "s22e3p4.png" }
+      ],
+      "connection": "Book publishers",
+      "details": "CANONGATE (in Edinburgh), Patricia ROUTLEDGE, ORION, PENGUIN"
+    },
+    {
+      "hieroglyph": "twisted-flax",
+      "media": "text",
+      "clues": [
+        { "media": "text", "value": "Eruption of Mount Edgecumbe" },
+        { "media": "text", "value": "The washing of the lions at the Tower of London" },
+        { "media": "text", "value": "Digital Dave replacing Big Ben" },
+        { "media": "text", "value": "London Zoo's lirpa loof" }
+      ],
+      "connection": "April Fool!",
+      "details": "Famous April Fools' Day hoaxes"
+    },
+    {
+      "hieroglyph": "horned-viper",
+      "media": "text",
+      "clues": [
+        { "media": "text", "value": "Anne Hathaway vs Zendaya" },
+        { "media": "text", "value": "Prince William vs Adrian Chiles" },
+        { "media": "text", "value": "Noel Gallagher vs Mick Hucknall" },
+        { "media": "text", "value": "Delia Smith vs Ed Sheeran" }
+      ],
+      "connection": "Supporters of rival football teams",
+      "details": "Arsenal vs Tottenham Hotspur, Aston Villa vs West Bromwich Albion, Manchester City vs Manchester United, Norwich City vs Ipswich Town"
+    },
+    {
+      "hieroglyph": "water",
+      "media": "music",
+      "clues": [
+        { "media": "music", "value": "s22e3m1.mp3" },
+        { "media": "music", "value": "s22e3m2.mp3" },
+        { "media": "music", "value": "s22e3m3.mp3" },
+        { "media": "music", "value": "s22e3m4.mp3" }
+      ],
+      "connection": "Dr Feelgood",
+      "details": "One and One is One by MEDICINE Head, Emmylou by FIRST AID KIT, Nancy Boy by PLACEBO, Friday I'm In Love by The CURE"
+    },
+    {
+      "hieroglyph": "eye-of-horus",
+      "media": "text",
+      "clues": [
+        { "media": "text", "value": "Scope" },
+        { "media": "text", "value": "Below a distinction" },
+        { "media": "text", "value": "Hourglass" },
+        { "media": "text", "value": "Bishop's hat" }
+      ],
+      "connection": "EIMRT anagrams",
+      "details": "REMIT, MERIT, TIMER, MITRE"
+    }
+  ],
+  "round2": [
+    {
+      "hieroglyph": "two-reeds",
+      "media": "text",
+      "clues": [
+        { "media": "text", "value": "MRS — Growth" },
+        { "media": "text", "value": "MRSG — Reproduction" },
+        { "media": "text", "value": "MRSGR — Excretion" }
+      ],
+      "fourth": { "media": "text", "value": "MRSGRE — Nutrition" },
+      "connection": "MRS GREN (necessary features of living organisms)"
+    },
+    {
+      "hieroglyph": "lion",
+      "media": "picture",
+      "clues": [
+        { "media": "picture", "value": "s22e3p5.png" },
+        { "media": "picture", "value": "s22e3p6.png" },
+        { "media": "picture", "value": "s22e3p7.png" }
+      ],
+      "fourth": { "media": "text", "value": "(e.g.) a picture of David Beckham" },
+      "connection": "Bend It Like Beckham"
+    },
+    {
+      "hieroglyph": "twisted-flax",
+      "media": "text",
+      "clues": [
+        { "media": "text", "value": "Queensland, Australia (initially)" },
+        { "media": "text", "value": "New South Wales, Australia (thereafter, until Covid)" },
+        { "media": "text", "value": "North Wales, UK (during Covid)" }
+      ],
+      "fourth": { "media": "text", "value": "New South Wales, Australia (thereafter)" },
+      "connection": "\"I'm a Celebrity...\" campsites"
+    },
+    {
+      "hieroglyph": "horned-viper",
+      "media": "text",
+      "clues": [
+        { "media": "text", "value": "7: 1111111" },
+        { "media": "text", "value": "5: SEVEN" },
+        { "media": "text", "value": "3: VII" }
+      ],
+      "fourth": { "media": "text", "value": "1: 7" },
+      "connection": "Seven represented by 7, 5, 3, 1 characters"
+    },
+    {
+      "hieroglyph": "water",
+      "media": "text",
+      "clues": [
+        { "media": "text", "value": "Party (alone)" },
+        { "media": "text", "value": "Army (2013 Olly Murs single)" },
+        { "media": "text", "value": "Rule (rhetorical device)" }
+      ],
+      "fourth": { "media": "text", "value": "(e.g.) Gang (Chinese political group)" },
+      "connection": "___ of one, of two, of three, of four"
+    },
+    {
+      "hieroglyph": "eye-of-horus",
+      "media": "text",
+      "clues": [
+        { "media": "text", "value": "Single Italian female" },
+        { "media": "text", "value": "Many Italian females" },
+        { "media": "text", "value": "Many Italian males" }
+      ],
+      "fourth": { "media": "text", "value": "Single Italian male" },
+      "connection": "Italian adjective endings: -a, -e, -i, -o"
+    }
+  ],
+  "round3": [
+    {
+      "name": "lion",
+      "groups": [
+        { "connection": "Synonyms for failure", "items": ["Flop", "Clunker", "Bomb", "Washout"] },
+        { "connection": "___ade", "items": ["Char", "Lemon", "Gator", "Arc"] },
+        { "connection": "Firearm parts", "items": ["Safety", "Magazine", "Barrel", "Stock"] },
+        { "connection": "End with a synonym for \"most important\"", "items": ["Remain", "Turkey", "Mischief", "Nonstop"] }
+      ]
+    },
+    {
+      "name": "water",
+      "groups": [
+        { "connection": "Things that can be done to teeth", "items": ["Brush", "Polish", "Fill", "Align"] },
+        { "connection": "Candy ___", "items": ["Crush", "Cane", "Stripe", "Floss"] },
+        { "connection": "Begin with Christian Sundays", "items": ["Whiten", "Palmer", "Easterly", "Lowry"] },
+        { "connection": "Walking aids", "items": ["Stick", "Staff", "Crutch", "Crook"] }
+      ]
+    }
+  ],
+  "round4": [
+    {
+      "title": "People who share part of their name with a toy",
+      "puzzles": [
+        { "answer": "DOLLY PARTON", "display": "DL LYPR TN" },
+        { "answer": "LUCILLE BALL", "display": "LC LLB LL" },
+        { "answer": "YO-YO MA", "display": "YYM" },
+        { "answer": "TEDDY SHERINGHAM", "display": "T DD YSH RN GHM" }
+      ]
+    },
+    {
+      "title": "Pairs of bears",
+      "puzzles": [
+        { "answer": "BLACK AND BROWN", "display": "B LCKN DBR WN" },
+        { "answer": "SUN AND MOON", "display": "SNND MN" },
+        { "answer": "SPECTACLED AND SLOTH", "display": "SPC TCL DNDS LTH" },
+        { "answer": "PANDA AND POLAR", "display": "PN DN DPLR" }
+      ]
+    },
+    {
+      "title": "Things you might see in a river",
+      "puzzles": [
+        { "answer": "(A) ROWING BOAT", "display": "RW NGB T" },
+        { "answer": "(A) FAMILY OF SWANS", "display": "FM LYFS W NS" },
+        { "answer": "RAW SEWAGE", "display": "RWS WG" },
+        { "answer": "SHOPPING TROLLEY", "display": "SH PPN GTR LLY" }
+      ]
+    },
+    {
+      "title": "Book titles which are questions?",
+      "puzzles": [{ "answer": "WHERE'S WALLY?", "display": "WH RSW LLY" }]
+    }
+  ]
+}
