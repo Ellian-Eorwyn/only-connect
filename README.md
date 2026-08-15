@@ -12,7 +12,16 @@ the wall that resolves into coloured rows — without copying its branding.
 
 ## Quick start
 
-On Linux/macOS, the two scripts do everything (they need **Node 18+**):
+**Fresh machine, one line** (Linux/macOS — clones, installs Node if needed, installs deps, runs):
+
+```bash
+git clone https://github.com/Ellian-Eorwyn/only-connect.git && cd only-connect && ./install.sh -y && ./run.sh
+```
+
+(While the repo is private, use `gh repo clone Ellian-Eorwyn/only-connect` instead of the
+`git clone …` part — it handles the GitHub login for you.)
+
+Already cloned? On Linux/macOS the two scripts do everything (they need **Node 18+**):
 
 ```bash
 ./install.sh   # installs Node automatically (via nvm, no sudo) if you don't have it, then deps
