@@ -1,5 +1,5 @@
 import { create } from 'zustand';
-import { persist } from 'zustand/middleware';
+import { persist, createJSONStorage } from 'zustand/middleware';
 import {
   GameSet,
   Hieroglyph,
@@ -185,6 +185,34 @@ function shuffle<T>(arr: T[]): T[] {
 }
 
 const groupOfTile = (id: number) => Math.floor(id / 4);
+
+// Storage that never throws — falls back to memory if localStorage is blocked
+// (e.g. Safari opening the single-file build from a file:// URL). Keeps the app
+// from crashing; it just won't persist across refreshes in that case.
+const memoryStore = new Map<string, string>();
+const safeStorage = {
+  getItem: (name: string): string | null => {
+    try {
+      return localStorage.getItem(name);
+    } catch {
+      return memoryStore.get(name) ?? null;
+    }
+  },
+  setItem: (name: string, value: string): void => {
+    try {
+      localStorage.setItem(name, value);
+    } catch {
+      memoryStore.set(name, value);
+    }
+  },
+  removeItem: (name: string): void => {
+    try {
+      localStorage.removeItem(name);
+    } catch {
+      memoryStore.delete(name);
+    }
+  },
+};
 
 export const useGame = create<StoreState>()(
   persist(
@@ -602,6 +630,7 @@ export const useGame = create<StoreState>()(
     },
     {
       name: 'only-connect-home',
+      storage: createJSONStorage(() => safeStorage),
       // Persist game progress + the loaded set, but not media URLs, timer, or history.
       partialize: (s) => ({
         teams: s.teams,

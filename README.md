@@ -12,6 +12,13 @@ the wall that resolves into coloured rows — without copying its branding.
 
 ## Quick start
 
+**Zero install — just open a file.** Download **Only-Connect.html** from the
+[latest release](https://github.com/Ellian-Eorwyn/only-connect/releases/latest) and double‑click
+it. The entire game — the music and the sample questions included — lives inside that one file. It
+works offline in any modern browser, with nothing to set up. Perfect for sending to a friend.
+
+Everything below is only if you want to run it from source (to edit it, or use the in‑app update):
+
 **Fresh machine, one line** (Linux/macOS — clones, installs Node if needed, installs deps, runs):
 
 ```bash
