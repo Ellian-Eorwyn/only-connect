@@ -12,6 +12,7 @@ import {
 } from '../game/exportWorkbook';
 import { HieroglyphIcon } from './Hieroglyphs';
 import { MuteButton } from './AudioController';
+import { UpdateButton } from './UpdateButton';
 
 export function SetupScreen() {
   const teams = useGame((s) => s.teams);
@@ -154,6 +155,8 @@ export function SetupScreen() {
       >
         Start game →
       </button>
+
+      <UpdateButton />
     </div>
   );
 }

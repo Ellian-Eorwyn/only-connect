@@ -734,6 +734,23 @@ button {
   right: 14px;
   z-index: 50;
 }
+
+/* update-from-GitHub row on the setup screen */
+.oc-update {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2px;
+}
+.oc-update-msg {
+  font-size: 13px;
+  color: var(--text-dim);
+}
+.oc-update-msg.err {
+  color: var(--gold);
+}
 .oc-field {
   display: flex;
   flex-direction: column;

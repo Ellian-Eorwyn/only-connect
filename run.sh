@@ -1,7 +1,18 @@
 #!/usr/bin/env bash
 # Only Connect — Home Game : start the app (Linux/macOS)
-set -euo pipefail
+set -eo pipefail
 cd "$(dirname "$0")"
+
+# Make an nvm-installed Node available even in a fresh shell.
+if ! command -v node >/dev/null 2>&1; then
+  export NVM_DIR="${NVM_DIR:-$HOME/.nvm}"
+  # shellcheck disable=SC1091
+  [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" >/dev/null 2>&1 || true
+fi
+if ! command -v node >/dev/null 2>&1; then
+  echo "✗ Node not found. Run ./install.sh first."
+  exit 1
+fi
 
 if [ ! -d node_modules ]; then
   echo "==> First run — installing dependencies…"

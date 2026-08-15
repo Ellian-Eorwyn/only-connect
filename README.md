@@ -15,9 +15,12 @@ the wall that resolves into coloured rows — without copying its branding.
 On Linux/macOS, the two scripts do everything (they need **Node 18+**):
 
 ```bash
-./install.sh   # installs dependencies (tells you how to get Node if it's missing)
+./install.sh   # installs Node automatically (via nvm, no sudo) if you don't have it, then deps
 ./run.sh       # starts the app and opens your browser
 ```
+
+`./install.sh` prompts before installing Node; pass `-y` to skip the prompt and do everything
+automatically.
 
 Or the plain npm way (any platform):
 
@@ -37,6 +40,14 @@ npm run build
 
 This produces a single self‑contained `dist/index.html` (everything inlined) that you can
 **double‑click to open** in Chrome/Edge — no server, fully offline.
+
+### Updating
+
+To pull the latest version later, either:
+
+- run `./update.sh` in the project folder (does `git pull` + `npm install`), or
+- click **⟳ Update from GitHub** on the setup screen while the app is running via `./run.sh`
+  (it updates in place and reloads).
 
 ---
 
@@ -139,3 +150,11 @@ templates/
 - Two teams, one shared screen, fully offline.
 - Not affiliated with the BBC or the *Only Connect* production; the sample game's questions
   come from the community OCDB archive and are included only as a local demonstration.
+
+## License
+
+**Personal, non‑commercial home use only** — see [LICENSE](LICENSE). *Only Connect*, its format,
+and its music are the property of their respective rights holders (RDF/Parasol/Banijay, and the
+BBC); this is an unofficial fan‑made tool. The bundled sample questions, images, and music are
+copyright their owners and are **not** licensed for redistribution — if you share this project,
+replace that sample content with your own first.

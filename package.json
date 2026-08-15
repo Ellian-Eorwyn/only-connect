@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "type": "module",
   "description": "A home version of the Only Connect quiz show — load a question set from a spreadsheet and play in the browser.",
+  "license": "SEE LICENSE IN LICENSE",
   "scripts": {
     "dev": "vite",
     "start": "vite",
